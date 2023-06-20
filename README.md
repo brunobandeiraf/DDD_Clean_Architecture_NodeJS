@@ -19,7 +19,7 @@
 - Casos de uso
 
 # Comandos
-## Iniciar Projeto
+## Start Projeto
 - npm init -y
 - npm i typescript @types/node -D
 - npx tsc --init
@@ -27,3 +27,6 @@
 ## Tests
 - npm i vitest -D
 - npx vitest run
+
+# Others
+- npm i dayjs 
