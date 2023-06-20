@@ -1,4 +1,6 @@
-# Clear DDD (Domain Drive Design -  Design Dirigido à Domínio)
+# Clean DDD (Domain Drive Design -  Design Dirigido à Domínio)
+- Clean Architecture (Arquitetura Limpa)
+- https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
 ## Domínio
 - Domain Experts
