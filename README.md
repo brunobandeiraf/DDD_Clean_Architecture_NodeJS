@@ -1,1 +1,19 @@
-# Clear_Domain_Drive_Design
+# Clear DDD (Domain Drive Design -  Design Dirigido à Domínio)
+
+## Domínio
+- Domain Experts
+  - Conversa
+- Linguagem ubíqua
+
+- Usuário
+  - Client
+  - Fornecedor
+  - Atendente
+  - Barman
+
+- Agregados
+- Value Objects
+- Eventos de domínio
+- Subdomínios (Bounded Contexts)
+- Entidades
+- Casos de uso
