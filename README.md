@@ -27,6 +27,7 @@
 ## Tests
 - npm i vitest -D
 - npx vitest run
+- npm i vite-tsconfig-paths -D
 
 # Others
 - npm i dayjs 
