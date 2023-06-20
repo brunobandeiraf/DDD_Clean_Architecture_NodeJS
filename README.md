@@ -19,6 +19,11 @@
 - Casos de uso
 
 # Comandos
+## Iniciar Projeto
 - npm init -y
 - npm i typescript @types/node -D
 - npx tsc --init
+
+## Tests
+- npm i vitest -D
+- npx vitest run
