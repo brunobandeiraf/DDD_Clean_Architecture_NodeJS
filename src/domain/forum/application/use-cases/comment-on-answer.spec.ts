@@ -8,29 +8,29 @@ let inMemoryAnswerCommentsRepository: InMemoryAnswerCommentsRepository
 let sut: CommentOnAnswerUseCase
 
 describe('Comment on Answer', () => {
-  beforeEach(() => {
-    inMemoryAnswersRepository = new InMemoryAnswersRepository()
-    inMemoryAnswerCommentsRepository = new InMemoryAnswerCommentsRepository()
+    beforeEach(() => {
+        inMemoryAnswersRepository = new InMemoryAnswersRepository()
+        inMemoryAnswerCommentsRepository = new InMemoryAnswerCommentsRepository()
 
-    sut = new CommentOnAnswerUseCase(
-      inMemoryAnswersRepository,
-      inMemoryAnswerCommentsRepository,
-    )
-  })
-
-  it('should be able to comment on answer', async () => {
-    const answer = makeAnswer()
-
-    await inMemoryAnswersRepository.create(answer)
-
-    await sut.execute({
-      answerId: answer.id.toString(),
-      authorId: answer.authorId.toString(),
-      content: 'Comentário teste',
+        sut = new CommentOnAnswerUseCase(
+            inMemoryAnswersRepository,
+            inMemoryAnswerCommentsRepository,
+        )
     })
 
-    expect(inMemoryAnswerCommentsRepository.items[0].content).toEqual(
-      'Comentário teste',
-    )
-  })
+    it('should be able to comment on answer', async () => {
+        const answer = makeAnswer()
+
+        await inMemoryAnswersRepository.create(answer)
+
+        await sut.execute({
+            answerId: answer.id.toString(),
+            authorId: answer.authorId.toString(),
+            content: 'Comentário teste',
+        })
+
+        expect(inMemoryAnswerCommentsRepository.items[0].content).toEqual(
+            'Comentário teste',
+        )
+    })
 })
