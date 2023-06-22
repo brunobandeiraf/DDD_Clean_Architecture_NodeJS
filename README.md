@@ -33,3 +33,4 @@
 
 # Others
 - npm i dayjs 
+- npm i @faker-js/faker -D
